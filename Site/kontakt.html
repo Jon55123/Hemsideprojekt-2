@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('karta');
+            var mapOptions = {
+                center: new google.maps.LatLng(59.2236256,17.9364738),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+<div id="Header">
+    <div id="Header-logo">
+        <a href="index.html">
+            <h1 id="logo">
+                TUMBA SKOLAN
+            </h1>
+        </a>
+    </div>
+    <div ID="Header-matsedel">
+        <a href="matsedel.html">
+            <h2 id="matsedel">
+                MATSEDEL
+            </h2>
+        </a>
+    </div>
+    <div ID="Header-omoss">
+        <a href="omoss.html">
+            <h2 id="omoss">
+                OM OSS
+            </h2>
+        </a>
+    </div>
+    <div ID="Header-kontakt">
+        <a href="kontakt.html">
+            <h2 id="kontakt">
+                KONTAKT
+            </h2>
+        </a>
+    </div>    <div ID="Header-schema">
+    <a href="schema.html">
+        <h2 id="schema">
+            SCHEMA
+        </h2>
+    </a>
+</div>
+</div>
+
+<h1 id="kontakt-h1">
+    Hitta hit
+</h1>
+
+<p id="kontakt-text">
+   <br>Tumba Skolan<br>Tumba Vägen 30<br>147 32 Tumba<br>08-530 437 55
+</p>
+
+<div id="karta">
+</div>
